@@ -1,6 +1,6 @@
 FROM alpine:3
 
-MAINTAINER karavan <karavan@github.com>
+LABEL org.opencontainers.image.authors="karavan"
 RUN apk update \
     && apk add bind-tools netcat-openbsd curl traceroute jq iproute2 nmap nftables \
     && apk cache clean
